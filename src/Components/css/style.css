@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "jost", sans-serif ;
+}
+body{
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "jost", sans-serif;
+}
+
+@media (max-height:500px){
+    .box {
+        height: 80vh;
+    }
+
+    .wave{
+        top:85%
+    }
+
+    #weathercon{
+        font-size: 5em;
+    }
+}
+@media (max-height:600px){
+    .box {
+        height: 90vh;
+        height: 80vh;
+    }
+    .wave{
+        top:85%
+    }
+    #weathercon{
+        font-size: 5em;
+    }
+    .info{
+        font-size: 1.5rem;
+    }
+}
+
+body > span {
+    width: 100vw;
+    text-align: center;
+    color: grey;
+}
+
+
+.inputField{
+    width: 50%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 1rem 1rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.errorMsg{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+.box:after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+    
+}
